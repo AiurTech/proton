@@ -1,0 +1,18 @@
+#SBT
+target
+project/target
+
+#VSCode
+.metals
+.bloop
+
+# IntelliJ
+.idea
+.idea_modules
+*.iml
+*.ipr
+*.iws
+.history
+
+# Mac
+.DS_Store
