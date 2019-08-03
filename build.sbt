@@ -4,7 +4,19 @@ version := "0.4"
 
 scalaVersion := "2.12.8"
 
-scalacOptions ++= List("-feature", "-deprecation", "-unchecked", "-Xlint")
+scalacOptions ++= List(
+  "-encoding", "utf8",
+  "-feature", 
+  "-deprecation", 
+  "-unchecked", 
+  "-Xlint",
+  "-Ypartial-unification",
+  "-Yrangepos",
+  "-Ywarn-unused",
+  "-Ywarn-unused-import"
+)
+
+addCompilerPlugin(scalafixSemanticdb)
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http"   % "10.1.9",

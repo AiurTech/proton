@@ -11,7 +11,7 @@ object Server {
   val serverHost = "localhost"
   val serverPort = 8080
 
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
 
     implicit val system: ActorSystem             = ActorSystem(systemName)
     implicit val materializer: ActorMaterializer = ActorMaterializer()
