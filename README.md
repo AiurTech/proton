@@ -1,6 +1,8 @@
 Proton Server
 ==============
 
+RESTful HTTP server ready template with batteries included :battery: :computer:
+
 Build
 --------
 

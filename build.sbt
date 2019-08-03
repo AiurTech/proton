@@ -1,14 +1,15 @@
 organization := "uk.co.aiur"
-name := "aiur-proton"
+name := "proton"
 version := "0.4"
 
 scalaVersion := "2.12.8"
 
 scalacOptions ++= List(
-  "-encoding", "utf8",
-  "-feature", 
-  "-deprecation", 
-  "-unchecked", 
+  "-encoding",
+  "utf8",
+  "-feature",
+  "-deprecation",
+  "-unchecked",
   "-Xlint",
   "-Ypartial-unification",
   "-Yrangepos",
@@ -24,7 +25,6 @@ libraryDependencies ++= Seq(
   "org.scalatest"     %% "scalatest"   % "3.0.5" % "test"
 )
 
-maintainer := "cto+scala@aiur.co.uk"
+maintainer := "cto+proton@aiur.co.uk"
 
-lazy val protoinServer = Project(id = "proton", base = file(".")).
-	enablePlugins(JavaAppPackaging)
+lazy val protoServer = Project(id = "proton", base = file(".")).enablePlugins(JavaAppPackaging)
