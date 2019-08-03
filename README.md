@@ -1,10 +1,30 @@
-Use
+Proton Server
 ==============
 
-$ sbt 
+Build
+--------
+
+```bash
+$ sbt
 > compile
 > run
+```
 
-or 
+or
 
-$ sbt run
+```bash
+sbt run
+```
+
+Deployment
+----------
+
+```bash
+sbt universal:packageBin
+```
+
+Generated build available in:
+
+```bash
+target/universal/<package>
+```

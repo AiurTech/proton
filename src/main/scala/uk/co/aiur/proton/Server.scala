@@ -19,8 +19,13 @@ object Server {
 
     val bindingFuture = Http().bindAndHandle(Routes.statusRoute, serverHost, serverPort)
 
-    println(s"Server online at http://$serverHost:$serverPort/\nPress RETURN to stop...")
+
+    println(s"Server online at http://$serverHost:$serverPort/")
+    println(s"Endpoint http://$serverHost:$serverPort/status")
+    
+    println("Press RETURN to stop...")
     StdIn.readLine() // let it run until user presses return
+
     bindingFuture
       .flatMap(_.unbind())                 // trigger unbinding from the port
       .onComplete(_ => system.terminate()) // and shutdown when done
