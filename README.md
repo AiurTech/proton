@@ -8,6 +8,8 @@ Build
 
 ```bash
 $ sbt
+> scalafix
+> scalafmt
 > compile
 > run
 ```
