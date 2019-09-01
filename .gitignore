@@ -2,7 +2,7 @@
 target
 project/target
 
-#VSCode
+#Metals + Bloop build server
 .metals
 .bloop
 
